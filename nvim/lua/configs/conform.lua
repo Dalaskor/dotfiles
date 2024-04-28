@@ -5,6 +5,7 @@ local options = {
     html = { "prettier" },
     javascript = { "eslint_d" },
     typescript = { "eslint_d" },
+    go = { "gopls" },
   },
 
   format_on_save = {

@@ -3,8 +3,11 @@
 !README.md
 !bspwm/
 !sxhkd/
+!picom/
+!polybar/
 !kitty/
 !alacritty/
 !nvim/
+./nvim/*.json
 !tmux/
 !rofi/
