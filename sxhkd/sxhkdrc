@@ -123,3 +123,15 @@ super + {Left,Down,Up,Right}
 # lock screen
 shift + alt + l
   betterlockscreen --lock
+
+Print
+  flameshot gui --clipboard
+
+shift + Print
+  flameshot gui --path ~/Pictures/Screenshots/
+
+alt + Print
+  flameshot full --clipboard
+
+shift + alt + Print
+  flameshot full --path "~/Pictures/Screenshots/"
