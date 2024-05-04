@@ -11,3 +11,5 @@
 ./nvim/*.json
 !tmux/
 !rofi/
+!dunst/
+!bin/
