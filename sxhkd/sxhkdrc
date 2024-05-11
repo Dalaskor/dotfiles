@@ -9,7 +9,6 @@ super + Return
 # program launcher
 super + d
 	rofi -show drun -icon-theme "Papirus" -show-icons
-  # rofi -combi-modi drun -show combi -icon-theme "Papirus" -show-icons
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -136,3 +135,22 @@ alt + Print
 
 shift + alt + Print
   flameshot full --path "~/Pictures/Screenshots/"
+
+# Multimedia
+XF86AudioPlay
+  playerctl play-pause
+
+XF86AudioNext
+  playerctl next
+
+XF86AudioPrev
+  playerctl previous 
+
+XF86AudioRaiseVolume
+  pactl set-sink-volume @DEFAULT_SINK@ +10%
+
+XF86AudioLowerVolume
+  pactl set-sink-volume @DEFAULT_SINK@ -10%
+
+XF86AudioMute
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
