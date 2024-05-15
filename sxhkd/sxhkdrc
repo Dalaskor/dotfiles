@@ -136,7 +136,7 @@ alt + Print
 shift + alt + Print
   flameshot full --path "~/Pictures/Screenshots/"
 
-# Multimedia
+# multimedia
 XF86AudioPlay
   playerctl play-pause
 
@@ -154,3 +154,11 @@ XF86AudioLowerVolume
 
 XF86AudioMute
   pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# bluetooth menu
+super + alt + b
+  ~/.config/bin/rofi-bluetooth
+
+# mouse control
+alt + m 
+  ~/.config/bin/mouse_keys-v2.0-linux-amd64.run
