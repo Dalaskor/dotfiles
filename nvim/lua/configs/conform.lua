@@ -6,6 +6,7 @@ local options = {
     javascript = { "eslint_d" },
     typescript = { "eslint_d" },
     go = { "gopls" },
+    python = { "black", "autopep8" },
   },
 
   format_on_save = {
