@@ -98,4 +98,9 @@ return {
     end,
     dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" }
   },
+
+  {
+    "charludo/projectmgr.nvim",
+    lazy = false,
+  },
 }
