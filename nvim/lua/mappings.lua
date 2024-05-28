@@ -19,6 +19,7 @@ map("n", "<leader>gg", ":LazyGit<cr>", { desc = "Run LazyGit" })
 -- Debugger
 local dap = require('dap');
 local dapui = require('dapui');
+
 map("n", "<leader>du", function()
   dapui.toggle()
 end, { desc = "Debug - Breakpoint" })
@@ -34,3 +35,9 @@ end, { desc = "Debug - Start" })
 map("n", "<leader>dn", function()
   dap.step_over()
 end, { desc = "Debug - Step over" })
+
+-- Tabs
+map('n', "<leader>B", ":tabnew<CR>")
+map('n', "<leader>X", ":tabclose<CR>")
+map('n', "<leader>N", ":tabnext<CR>")
+map('n', "<leader>P", ":tabprevious<CR>")

@@ -2,8 +2,8 @@ require "nvchad.options"
 
 -- add yours here!
 
--- local o = vim.o
--- o.cursorlineopt ='both' -- to enable cursorline!
+local o = vim.o
+o.showtabline = 2
 
 -- NEOVIDE CONFIG
 if vim.g.neovide then
