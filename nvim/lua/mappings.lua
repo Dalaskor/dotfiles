@@ -20,17 +20,17 @@ map("n", "<leader>gg", ":LazyGit<cr>", { desc = "Run LazyGit" })
 local dap = require('dap');
 local dapui = require('dapui');
 
+map("n", "<leader>ds", function()
+  dap.continue()
+end, { desc = "Debug - Continue" })
+
 map("n", "<leader>du", function()
   dapui.toggle()
-end, { desc = "Debug - Breakpoint" })
+end, { desc = "Debug - Toggle UI" })
 
 map("n", "<leader>db", function()
   dap.toggle_breakpoint()
 end, { desc = "Debug - Breakpoint" })
-
-map("n", "<leader>ds", function()
-  dap.continue()
-end, { desc = "Debug - Start" })
 
 map("n", "<leader>dn", function()
   dap.step_over()
