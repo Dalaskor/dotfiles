@@ -1,9 +1,7 @@
 require "nvchad.options"
 
 -- add yours here!
-
-local o = vim.o
-o.showtabline = 2
+-- local o = vim.o
 
 -- NEOVIDE CONFIG
 if vim.g.neovide then
