@@ -1,18 +1,19 @@
 /*
 
-# nvim/lazy-lock.json
+nvim/lazy-lock.json
 !README.md
-!/bspwm/
-!/sxhkd/
-!/picom/
-!/polybar
-!/kitty/
-!/alacritty/
-!/tmux/
-!/rofi/
-!/dunst/
-!/bin/
+!./alacritty/
+!./bin/
+!./bspwm/
+!./dunst/
+!./easyeffects/
+!./kitty/
+!./picom/
+!./polybar
+!./rofi/
+!./sxhkd/
+!./tmux/
 
-!/nvim
-!/nvim/*
-/nvim/lazy-lock.json
+!./nvim
+!./nvim/*
+./nvim/lazy-lock.json
