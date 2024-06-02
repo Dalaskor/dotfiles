@@ -2,10 +2,10 @@
 
 choice=$(printf "Lock\nLogout\nSuspend\nHibernate\nReboot\nShutdown" | rofi -dmenu)
 case "$choice" in
-  Lock) sh ~/.config/bin/screen-lock ;;
+  Lock) hyprlock ;;
   Logout) pkill -KILL -u "$USER" ;;
-  Suspend) systemctl suspend && sh ~/.config/bin/screen-lock ;;
-  Hibernate) hibernate ;;
+  Suspend) hyprlock & sleep 1 && systemctl suspend ;;
+  Hibernate) hyprlock & sleep 1 && systemctl hibernate ;;
   Reboot) shutdown -r now ;;
-  Shutdown) shutdown -a now ;;
+  Shutdown) shutdown now ;;
 esac
