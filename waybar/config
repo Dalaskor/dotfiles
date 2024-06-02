@@ -1,0 +1,87 @@
+{
+    "layer": "top",
+    "height": 30,
+    "spacing": 1,
+    // Choose the order of the modules
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+				"tray",
+        "backlight",
+        "pulseaudio",
+        "network",
+        "battery",
+        "battery#bat2",
+				"clock",
+        "custom/power"
+		],
+		"hyprland/window": {
+			"separate-outputs": true
+		},
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "{:%A, %B %d, %Y}",
+        "format": "{:%H:%M}"
+    },
+    "battery": {
+        "bat": "BAT0",
+        "states": {
+            "warning": 20
+        },
+        "format": "{icon} 1",
+        "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
+        "format-charging": "󰂄  1",
+        "format-warning": "󰂃  1",
+				"tooltip-format": "{capacity}% capacity"
+    },
+    "battery#bat2": {
+        "bat": "BAT1",
+        "states": {
+            "warning": 20
+        },
+        "format": "{icon} 2",
+        "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
+        "format-charging": "󰂄  2",
+        "format-warning": "󰂃  2",
+				"tooltip-format": "{capacity}% capacity"
+    },
+    "network": {
+        "format-wifi": "󰤨",
+        "format-disconnected": "󰤭",
+				"tooltip-format": "Connected to {essid}",
+        "on-click": "~/.config/bin/wifimenu"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}",
+        "format-muted": "󰖁",
+				"format-icons": {
+					"default": ["  ", "  ", "󰕾  "]
+				},
+				"tooltip-format": "{volume}% volume",
+        "on-click": "pavucontrol",
+        "on-click-right": "easyeffects"
+		},
+    "custom/power": {
+        "format": "󰐥",
+        "on-click": "sleep 0.15 && ~/.config/bin/powermenu"
+    },
+    "backlight": {
+        "format": "{icon} {percent}",
+        "format-icons": "   "
+    }
+}
+
+// vim: ft=jsonc

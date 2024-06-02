@@ -1,6 +1,5 @@
 /*
 
-nvim/lazy-lock.json
 !README.md
 !./alacritty/
 !./bin/
@@ -13,7 +12,7 @@ nvim/lazy-lock.json
 !./rofi/
 !./sxhkd/
 !./tmux/
-
-!./nvim
-!./nvim/*
-./nvim/lazy-lock.json
+!./hypr/
+!./waybar/
+!./xdg-desktop-portal/
+!./nvim/
