@@ -1,4 +1,4 @@
-/*
+*
 
 !README.md
 !./alacritty/
@@ -12,7 +12,7 @@
 !./rofi/
 !./sxhkd/
 !./tmux/
-!./hypr/
+!hypr/
 !./waybar/
 !./xdg-desktop-portal/
 !./nvim/
