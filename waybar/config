@@ -11,6 +11,7 @@
     ],
     "modules-right": [
 				"tray",
+        "hyprland/language",
         "backlight",
         "pulseaudio",
         "network",
@@ -81,6 +82,11 @@
     "backlight": {
         "format": "{icon} {percent}",
         "format-icons": "   "
+    },
+    "hyprland/language": {
+      "format": "{}",
+      "format-en": "en",
+      "format-ru": "ru"
     }
 }
 

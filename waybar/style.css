@@ -102,6 +102,8 @@ button {
 }
 
 #clock,
+#language,
+#backlight,
 #battery,
 #cpu,
 #memory,
@@ -164,6 +166,10 @@ button {
 
 #battery.warning:not(.charging) {
     color: @red;
+}
+
+#backlight {
+    color: @yellow;
 }
 
 #custom-power {
