@@ -5,5 +5,5 @@ require "nvchad.options"
 
 -- NEOVIDE CONFIG
 if vim.g.neovide then
-  vim.o.guifont = "JetBrainsMono Nerd Font Mono:h10"
+  vim.o.guifont = "JetBrainsMono Nerd Font Mono:h14"
 end

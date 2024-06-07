@@ -7,6 +7,7 @@ local options = {
     typescript = { "eslint_d" },
     go = { "gopls" },
     python = { "black", "autopep8" },
+    rust = { "rustfmt" },
   },
 
   format_on_save = {

@@ -25,7 +25,11 @@ return {
         "html-lsp",
         "css-lsp",
         "prettier",
+        "prettierd",
         "typescript-language-server",
+        "eslint_d",
+        "node-debug2-adapter",
+        "prisma-language-server",
       },
     },
   },
@@ -45,6 +49,7 @@ return {
         "markdown_inline",
         "prisma",
         "go",
+        "rust",
       },
       indent = {
         enable = true,
@@ -97,5 +102,10 @@ return {
       end
     end,
     dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" }
+  },
+
+  {
+    "rust-lang/rust.vim",
+    lazy = false,
   },
 }
