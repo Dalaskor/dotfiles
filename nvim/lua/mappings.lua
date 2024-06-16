@@ -41,3 +41,6 @@ map('n', "<leader>B", ":tabnew<CR>")
 map('n', "<leader>X", ":tabclose<CR>")
 map('n', "<leader>N", ":tabnext<CR>")
 map('n', "<leader>P", ":tabprevious<CR>")
+
+-- LSP diagnostic
+map('n', "<leader>lf", "<cmd>lua vim.diagnostic.open_float()<CR>")
