@@ -8,4 +8,5 @@
     fg-col2: #F28FAD;
     grey: #D9E0EE;
     width: 600;
+    border-radius: 25px;
 }
