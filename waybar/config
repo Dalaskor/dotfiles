@@ -21,10 +21,11 @@
         "custom/power"
 		],
 		"hyprland/window": {
-			"separate-outputs": true
+			"separate-outputs": true,
+      "format": "{class}"
 		},
     "hyprland/workspaces": {
-        "disable-scroll": true,
+        "disable-scroll": false,
         "all-outputs": true,
         "on-click": "activate"
     },
