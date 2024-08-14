@@ -22,7 +22,7 @@
 		],
 		"hyprland/window": {
 			"separate-outputs": true,
-      "format": "{class}"
+      "format": "{initialClass}"
 		},
     "hyprland/workspaces": {
         "disable-scroll": false,
