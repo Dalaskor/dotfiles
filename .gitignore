@@ -19,3 +19,4 @@ tmux/plugins
 !scripts
 !electron-flags.conf
 !electron13-flags.conf
+!yazi
