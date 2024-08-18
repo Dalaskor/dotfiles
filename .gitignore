@@ -17,3 +17,5 @@ tmux/plugins
 !xdg-desktop-portal
 !neofetch
 !scripts
+!electron-flags.conf
+!electron13-flags.conf
