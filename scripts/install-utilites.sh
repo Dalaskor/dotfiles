@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-paru -S bluez bluez-utils cpupower tlp tlp-rdw tlpui threshy threshy-gui git zip unzip wget curl ripgrep openresolv openssh btop neofetch aspell aspell-en aspell-ru pcmanfm-gtk3 &&
+paru -S bluez bluez-utils cpupower tlp tlp-rdw tlpui threshy threshy-gui git zip unzip wget curl ripgrep openresolv openssh btop neofetch aspell aspell-en aspell-ru &&
   sudo systemctl start bluetooth.service &&
   sudo systemctl enable bluetooth.service &&
   sudo systemctl start cpupower.service &&
