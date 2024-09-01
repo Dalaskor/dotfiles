@@ -2,21 +2,26 @@
     "layer": "top",
     "height": 30,
     "spacing": 1,
+    "position": "top",
+    "margin": "10 10 0 10",
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces"
+        "temperature",
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "battery#bat2"
     ],
     "modules-center": [
-        "hyprland/window"
+        "hyprland/workspaces"
+        // "hyprland/window"
     ],
     "modules-right": [
 				"tray",
         "hyprland/language",
-        "backlight",
-        "pulseaudio",
         "network",
-        "battery",
-        "battery#bat2",
+        "bluetooth",
+        "cpu",
 				"clock",
         "custom/power"
 		],
@@ -81,13 +86,26 @@
         "on-click": "sleep 0.15 && ~/.config/bin/powermenu"
     },
     "backlight": {
+        "device": "intel_backlight",
         "format": "{icon} {percent}",
         "format-icons": "   "
     },
     "hyprland/language": {
-      "format": "{}",
-      "format-en": "en",
-      "format-ru": "ru"
+        "format": "{}",
+        "format-en": "en",
+        "format-ru": "ru"
+    },
+    "temperature": {
+        "format": " {temperatureC}°C"
+    },
+    "bluetooth": {
+        "format": "",
+        "on-click": "~/.config/bin/rofi-bluetooth"
+    },
+    "cpu": {
+      "interval": 10,
+      "format": "{}% ",
+      "max-length": 10
     }
 }
 
