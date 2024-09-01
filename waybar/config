@@ -22,6 +22,7 @@
         "network",
         "bluetooth",
         "cpu",
+        "memory",
 				"clock",
         "custom/power"
 		],
@@ -105,6 +106,11 @@
     "cpu": {
       "interval": 10,
       "format": "{}% ",
+      "max-length": 10
+    },
+    "memory": {
+      "interval": 30,
+      "format": "{}% ",
       "max-length": 10
     }
 }
