@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+interface_name="fvds"
+wg_status=$(nmcli | grep "$interface_name")
+
+if [ "$wg_status" = "" ]; then
+	rofi -dmenu -password -p "Root Password: " | sudo -S wg-quick up "$interface_name"
+  notify-send "Connection to wireguard ($interface_name)..."
+else
+	rofi -dmenu -password -p "Root Password: " | sudo -S wg-quick down "$interface_name"
+  notify-send "Disconnect from wireguard  ($interface_name)..."
+fi

@@ -90,7 +90,7 @@ button {
 #workspaces button {
   padding: 0 5px;
   color: @surface2;
-  margin: 4px 0 4px 6px;
+  margin: 4px 0 4px 0px;
   transition: color 200ms ease-in-out;
 }
 
@@ -139,11 +139,6 @@ button {
   margin: 0 4px;
 }
 
-/* If workspaces is the leftmost module, reduce left margin */
-.modules-left>widget:first-child>#workspaces {
-  margin-left: 2px;
-}
-
 #clock {
   color: @text;
 }
@@ -181,6 +176,11 @@ button {
 }
 
 #custom-power {
+  color: @maroon;
+  margin-right: 5px;
+}
+
+#custom-wireguard {
   color: @maroon;
   margin-right: 5px;
 }

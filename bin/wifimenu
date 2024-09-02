@@ -5,8 +5,7 @@ network_status=$(ps aux | grep NetworkManager | grep root)
 
 # Если служба не запущена
 if [ "$network_status" = "" ]; then
-	# TODO: Hide password entry
-	rofi -dmenu -p "Root Password: " | sudo -S NetworkManager
+	rofi -dmenu -password -p "Root Password: " | sudo -S NetworkManager
 fi
 
 # Starts a scan of available broadcasting SSIDs

@@ -6,11 +6,13 @@
     "margin": "10 10 0 10",
     // Choose the order of the modules
     "modules-left": [
-        "temperature",
         "pulseaudio",
-        "backlight",
         "battery",
-        "battery#bat2"
+        "battery#bat2",
+        "temperature",
+        "backlight",
+        "cpu",
+        "memory"
     ],
     "modules-center": [
         "hyprland/workspaces"
@@ -21,9 +23,8 @@
         "hyprland/language",
         "network",
         "bluetooth",
-        "cpu",
-        "memory",
 				"clock",
+        "custom/wireguard",
         "custom/power"
 		],
 		"hyprland/window": {
@@ -112,6 +113,10 @@
       "interval": 30,
       "format": "{}% ",
       "max-length": 10
+    },
+    "custom/wireguard": {
+        "format": "🌐",
+        "on-click": "~/.config/bin/wireguard"
     }
 }
 
