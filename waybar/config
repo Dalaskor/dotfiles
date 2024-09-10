@@ -6,7 +6,7 @@
     "margin": "10 10 0 10",
     // Choose the order of the modules
     "modules-left": [
-        "pulseaudio",
+        "wireplumber",
         "battery",
         "battery#bat2",
         "temperature",
@@ -16,15 +16,14 @@
     ],
     "modules-center": [
         "hyprland/workspaces"
-        // "hyprland/window"
     ],
     "modules-right": [
 				"tray",
         "hyprland/language",
         "network",
         "bluetooth",
-				"clock",
         "custom/wireguard",
+				"clock",
         "custom/power"
 		],
 		"hyprland/window": {
@@ -117,7 +116,15 @@
     "custom/wireguard": {
         "format": "🌐",
         "on-click": "~/.config/bin/wireguard"
-    }
+    },
+  "wireplumber": {
+      "format": "{icon} {volume}",
+      "format-muted": "",
+      "on-click": "pavucontrol",
+      "on-click-right": "easyeffects",
+      "on-click-middle": "helvum",
+      "format-icons": ["", "", ""]
+  }
 }
 
 // vim: ft=jsonc

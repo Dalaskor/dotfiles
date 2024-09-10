@@ -147,11 +147,13 @@ button {
   color: @peach;
 }
 
-#pulseaudio {
+#pulseaudio,
+#wireplumber {
   color: @mauve;
 }
 
-#pulseaudio.muted {
+#pulseaudio.muted,
+#wireplumber.muted {
   color: @surface2;
 }
 
