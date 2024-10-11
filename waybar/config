@@ -118,11 +118,11 @@
         "on-click": "~/.config/bin/wireguard"
     },
   "wireplumber": {
-      "format": "{icon} {volume}",
+      "format": "{icon}   {volume}",
       "format-muted": "",
-      "on-click": "pavucontrol",
+      "on-click": "pwvucontrol",
       "on-click-right": "easyeffects",
-      "on-click-middle": "helvum",
+      "on-click-middle": "systemctl --user restart wireplumber",
       "format-icons": ["", "", ""]
   }
 }
